@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Snaag' do
+  use_frameworks!
+
+  target 'SnaagTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SnaagUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
