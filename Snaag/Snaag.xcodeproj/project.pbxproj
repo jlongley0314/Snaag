@@ -13,7 +13,7 @@
 		6FA4010720B605330096E4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4010520B605330096E4B2 /* LaunchScreen.storyboard */; };
 		6FA4011220B605330096E4B2 /* SnaagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4011120B605330096E4B2 /* SnaagTests.swift */; };
 		6FA4011D20B605330096E4B2 /* SnaagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4011C20B605330096E4B2 /* SnaagUITests.swift */; };
-		6FA4012D20B60A210096E4B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4012C20B60A210096E4B2 /* MainViewController.swift */; };
+		6FA4012D20B60A210096E4B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4012C20B60A210096E4B2 /* HomeViewController.swift */; };
 		6FA4013120B616560096E4B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4013020B616560096E4B2 /* Item.swift */; };
 		6FA4013320B6168F0096E4B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4013220B6168F0096E4B2 /* User.swift */; };
 		6FA4013520B6170C0096E4B2 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4013420B6170C0096E4B2 /* ItemCategory.swift */; };
@@ -49,7 +49,7 @@
 		6FA4011820B605330096E4B2 /* SnaagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnaagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA4011C20B605330096E4B2 /* SnaagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnaagUITests.swift; sourceTree = "<group>"; };
 		6FA4011E20B605330096E4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FA4012C20B60A210096E4B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6FA4012C20B60A210096E4B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6FA4013020B616560096E4B2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6FA4013220B6168F0096E4B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6FA4013420B6170C0096E4B2 /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		6FA4012B20B6087A0096E4B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6FA4012C20B60A210096E4B2 /* MainViewController.swift */,
+				6FA4012C20B60A210096E4B2 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 				6FA4013520B6170C0096E4B2 /* ItemCategory.swift in Sources */,
 				6FA400FB20B605310096E4B2 /* AppDelegate.swift in Sources */,
 				6FA4013120B616560096E4B2 /* Item.swift in Sources */,
-				6FA4012D20B60A210096E4B2 /* MainViewController.swift in Sources */,
+				6FA4012D20B60A210096E4B2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
