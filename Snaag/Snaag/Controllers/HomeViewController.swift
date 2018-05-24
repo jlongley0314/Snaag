@@ -13,6 +13,59 @@
 
 import Foundation
 import UIKit
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
+    
+    @IBOutlet weak var lendCameraButton: UIButton!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var snaagButton: UIView!
+    @IBOutlet weak var saveButton: UIView!
+    @IBOutlet weak var lendButton: UIView!
+    @IBOutlet weak var inboxButton: UIView!
+    @IBOutlet weak var profileButton: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Set up the gesture recognizers for the uiview nav buttons
+        let snaagTap = UITapGestureRecognizer(target: self, action: #selector(snaagButtonPressed))
+        snaagTap.delegate = self
+        self.snaagButton.addGestureRecognizer(snaagTap)
+        
+        let saveTap = UITapGestureRecognizer(target: self, action: #selector(saveButtonPressed))
+        saveTap.delegate = self
+        self.snaagButton.addGestureRecognizer(saveTap)
+        
+        let lendTap = UITapGestureRecognizer(target: self, action: #selector(lendButtonPressed))
+        lendTap.delegate = self
+        self.snaagButton.addGestureRecognizer(lendTap)
+        
+        let inboxTap = UITapGestureRecognizer(target: self, action: #selector(inboxButtonPressed))
+        inboxTap.delegate = self
+        self.snaagButton.addGestureRecognizer(inboxTap)
+        
+        let profileTap = UITapGestureRecognizer(target: self, action: #selector(profileButtonPressed))
+        profileTap.delegate = self
+        self.snaagButton.addGestureRecognizer(profileTap)
+    }
+    
+    @objc func snaagButtonPressed() {
+    
+    }
+    
+    @objc func saveButtonPressed() {
+        
+    }
+    
+    @objc func lendButtonPressed() {
+        
+    }
+    
+    @objc func inboxButtonPressed() {
+        
+    }
+    
+    @objc func profileButtonPressed() {
+        
+    }
     
 }
