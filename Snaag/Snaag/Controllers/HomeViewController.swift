@@ -23,8 +23,12 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var inboxButton: UIView!
     @IBOutlet weak var profileButton: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.lendCameraButton.layer.borderColor = UIColor.black.cgColor
+        self.lendCameraButton.layer.borderWidth = 1.0
         
         // Set up the gesture recognizers for the uiview nav buttons
         let snaagTap = UITapGestureRecognizer(target: self, action: #selector(snaagButtonPressed))
@@ -48,6 +52,11 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         self.snaagButton.addGestureRecognizer(profileTap)
     }
     
+    @IBAction func lendCameraPressed(_ sender: Any) {
+        self.lendButtonPressed()
+    }
+    
+    
     @objc func snaagButtonPressed() {
     
     }
@@ -57,7 +66,7 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func lendButtonPressed() {
-        
+        self.performSegue(withIdentifier: "showLendEdit", sender: self)
     }
     
     @objc func inboxButtonPressed() {
