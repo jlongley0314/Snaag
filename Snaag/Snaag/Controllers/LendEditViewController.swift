@@ -21,14 +21,18 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if (lendPhoto.image == nil) {
             imagePicker =  UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = .camera
             present(imagePicker, animated: true, completion: nil)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     //MARK: - Done image capture here
