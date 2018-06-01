@@ -361,6 +361,7 @@
                                         <state key="normal" title="C O N F I R M"/>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="MkB-ma-ofw" firstAttribute="top" secondItem="2OJ-lD-pzb" secondAttribute="bottom" constant="8" id="0RR-cC-0YN"/>
                                     <constraint firstItem="kAc-Mg-4An" firstAttribute="leading" secondItem="cgg-4v-Vlj" secondAttribute="leading" constant="10" id="2i0-6G-VJs"/>
@@ -429,7 +430,19 @@
                     </view>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
+                        <outlet property="confirmButton" destination="c2j-y7-Jp7" id="HaV-wi-MmV"/>
+                        <outlet property="deliverCostTextView" destination="qlv-F1-hqA" id="9gR-Wq-SuB"/>
+                        <outlet property="deliverDistanceTextView" destination="fn8-0m-ns6" id="hGb-qx-2ck"/>
+                        <outlet property="deliverPickerView" destination="E2I-Wh-nfs" id="pOG-n2-3fm"/>
                         <outlet property="lendPhoto" destination="kAc-Mg-4An" id="bOG-Fs-ZyU"/>
+                        <outlet property="lendPriceTextView" destination="gjb-oe-SFh" id="SX3-TE-ger"/>
+                        <outlet property="moreDetailsTextView" destination="MkB-ma-ofw" id="f5Z-41-VfS"/>
+                        <outlet property="pickUpPickerView" destination="Idu-Mx-VX4" id="OLV-yq-9ew"/>
+                        <outlet property="shipCostTextView" destination="UCX-HA-NzZ" id="u2D-GC-mST"/>
+                        <outlet property="shipPickerView" destination="3WG-Do-EHL" id="GQb-IK-MRS"/>
+                        <outlet property="snaagDaysTextView" destination="RTM-1j-LRZ" id="dvg-cG-FeJ"/>
+                        <outlet property="snaagHoursTextView" destination="73y-73-tqq" id="xL9-cn-vZr"/>
+                        <outlet property="titleTextEnter" destination="MrO-IU-srC" id="M4D-68-3L6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfa-po-1tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
