@@ -10,7 +10,7 @@ import Foundation
 import Photos
 import UIKit
 
-class LendEditViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate  {
+class LendEditViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate, UITextViewDelegate  {
     
     @IBOutlet weak var lendPhoto: UIImageView!
     @IBOutlet weak var titleTextEnter: UITextField!
@@ -28,6 +28,12 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
     var imagePicker: UIImagePickerController!
     var pictureTaken: Bool = false
     var photoStatus = PHAuthorizationStatus.notDetermined
+    var yesNoDataSource = ["Yes", "No"]
+    
+    // Booleans to indicate if the required fields have been given input
+    var titleGiven = false
+    var lendPriceGiven = false
+    var lendDurationGiven = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,14 +80,52 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        switch row {
-        case 0:
-            return "Yes"
-        case 1:
-            return "No"
-        default:
-            return nil
+        return self.yesNoDataSource[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // Determine which pickerview was used
+        if pickerView == self.pickUpPickerView {
+            print(yesNoDataSource[row])
+        } else if pickerView == self.deliverPickerView {
+            print(yesNoDataSource[row])
+        } else if pickerView == self.shipPickerView {
+            print(yesNoDataSource[row])
         }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView == self.moreDetailsTextView {
+            
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.titleTextEnter {
+            
+        } else if textField == self.lendPriceTextView {
+            
+        } else if textField == self.shipCostTextView {
+            
+        } else if textField == deliverDistanceTextView {
+            
+        } else if textField == deliverCostTextView {
+            
+        } else if textField == snaagDaysTextView {
+            
+        } else if textField == snaagHoursTextView {
+            
+        }
+        
+        if allRequiredFilled() {
+            // If this is true then the confirm button should be enabled here
+        }
+    }
+    
+    func allRequiredFilled() -> Bool {
+        // Checks if all the required fields are filled
+        
+        return false
     }
 }
 
