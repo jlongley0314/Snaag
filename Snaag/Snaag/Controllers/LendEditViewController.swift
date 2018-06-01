@@ -33,6 +33,10 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         self.pickUpPickerView.delegate = self
         self.pickUpPickerView.dataSource = self
         self.shipPickerView.delegate = self
