@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F3C85AC20BEF538003B84A6 /* LendEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3C85AB20BEF538003B84A6 /* LendEdit.storyboard */; };
+		6F3C85AC20BEF538003B84A6 /* Lend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3C85AB20BEF538003B84A6 /* Lend.storyboard */; };
 		6F3C85AE20BF0914003B84A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3C85AD20BF0914003B84A6 /* Main.storyboard */; };
 		6F434BBF20C08B9800B891F0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F434BBE20C08B9800B891F0 /* Extensions.swift */; };
+		6F4CB76220C3482B00006379 /* LendConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CB76120C3482B00006379 /* LendConfirmViewController.swift */; };
 		6FA400FB20B605310096E4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA400FA20B605310096E4B2 /* AppDelegate.swift */; };
 		6FA4010420B605330096E4B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4010320B605330096E4B2 /* Assets.xcassets */; };
 		6FA4010720B605330096E4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4010520B605330096E4B2 /* LaunchScreen.storyboard */; };
@@ -40,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F3C85AB20BEF538003B84A6 /* LendEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LendEdit.storyboard; sourceTree = "<group>"; };
+		6F3C85AB20BEF538003B84A6 /* Lend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lend.storyboard; sourceTree = "<group>"; };
 		6F3C85AD20BF0914003B84A6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6F434BBE20C08B9800B891F0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6F4CB76120C3482B00006379 /* LendConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendConfirmViewController.swift; sourceTree = "<group>"; };
 		6FA400F720B605310096E4B2 /* Snaag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snaag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA400FA20B605310096E4B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FA4010320B605330096E4B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				6FA4012C20B60A210096E4B2 /* HomeViewController.swift */,
 				6FBCC45020B85AF1007C7C83 /* LendEditViewController.swift */,
+				6F4CB76120C3482B00006379 /* LendConfirmViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 			children = (
 				6F3C85AD20BF0914003B84A6 /* Main.storyboard */,
 				6FA4010520B605330096E4B2 /* LaunchScreen.storyboard */,
-				6F3C85AB20BEF538003B84A6 /* LendEdit.storyboard */,
+				6F3C85AB20BEF538003B84A6 /* Lend.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,7 +284,7 @@
 			files = (
 				6FA4010720B605330096E4B2 /* LaunchScreen.storyboard in Resources */,
 				6FA4010420B605330096E4B2 /* Assets.xcassets in Resources */,
-				6F3C85AC20BEF538003B84A6 /* LendEdit.storyboard in Resources */,
+				6F3C85AC20BEF538003B84A6 /* Lend.storyboard in Resources */,
 				6F3C85AE20BF0914003B84A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +312,7 @@
 			files = (
 				6FA4013320B6168F0096E4B2 /* User.swift in Sources */,
 				6FA4013520B6170C0096E4B2 /* ItemCategory.swift in Sources */,
+				6F4CB76220C3482B00006379 /* LendConfirmViewController.swift in Sources */,
 				6FBCC45120B85AF1007C7C83 /* LendEditViewController.swift in Sources */,
 				6FA400FB20B605310096E4B2 /* AppDelegate.swift in Sources */,
 				6FA4013120B616560096E4B2 /* Item.swift in Sources */,

@@ -348,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="125.59999999999999" y="303.59820089955025"/>
         </scene>
-        <!--LendEdit-->
+        <!--Lend-->
         <scene sceneID="Wnt-M5-HKf">
             <objects>
-                <viewControllerPlaceholder storyboardName="LendEdit" id="Sh1-Lv-hVa" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Lend" id="Sh1-Lv-hVa" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftZ-bf-GuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125" y="811"/>

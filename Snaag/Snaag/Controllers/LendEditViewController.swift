@@ -86,6 +86,11 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
         self.confirmButton.isEnabled = allRequiredFilled()
     }
     
+    @IBAction func confirmPressed(_ sender: Any) {
+        performSegue(withIdentifier: "showLendFinish", sender: self)
+    }
+    
+    
     //MARK: - Done image capture here
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
