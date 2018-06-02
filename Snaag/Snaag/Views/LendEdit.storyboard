@@ -95,6 +95,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="titleEdit:" destination="WJG-XC-Kf0" eventType="editingDidEnd" id="V5R-tW-6Eo"/>
+                                        </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MkB-ma-ofw">
                                         <rect key="frame" x="10" y="364" width="355" height="115"/>
@@ -125,6 +128,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="lendPriceEdit:" destination="WJG-XC-Kf0" eventType="editingDidEnd" id="MKu-Kb-wa6"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -307,6 +313,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="snaagDaysEdit:" destination="WJG-XC-Kf0" eventType="editingDidEnd" id="z9r-qu-Vef"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -340,6 +349,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="snaagHoursEdit:" destination="WJG-XC-Kf0" eventType="editingDidEnd" id="HHC-BQ-NaG"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>

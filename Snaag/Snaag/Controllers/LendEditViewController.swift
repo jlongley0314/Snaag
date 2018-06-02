@@ -49,6 +49,7 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
         self.shipPickerView.dataSource = self
         self.deliverPickerView.delegate = self
         self.deliverPickerView.dataSource = self
+        self.confirmButton.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,6 +64,26 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    
+    @IBAction func titleEdit(_ sender: Any) {
+        self.titleGiven = !self.titleTextEnter.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty
+        self.confirmButton.isEnabled = allRequiredFilled()
+    }
+    
+    @IBAction func lendPriceEdit(_ sender: Any) {
+        self.lendPriceGiven = !self.lendPriceTextView.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty
+        self.confirmButton.isEnabled = allRequiredFilled()
+    }
+    
+    @IBAction func snaagDaysEdit(_ sender: Any) {
+        self.lendDurationGiven = !self.snaagDaysTextView.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty
+        self.confirmButton.isEnabled = allRequiredFilled()
+    }
+    
+    @IBAction func snaagHoursEdit(_ sender: Any) {
+        self.lendDurationGiven = !self.snaagHoursTextView.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty
+        self.confirmButton.isEnabled = allRequiredFilled()
     }
     
     //MARK: - Done image capture here
@@ -100,32 +121,9 @@ class LendEditViewController: UIViewController, UINavigationControllerDelegate, 
         }
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField == self.titleTextEnter {
-            
-        } else if textField == self.lendPriceTextView {
-            
-        } else if textField == self.shipCostTextView {
-            
-        } else if textField == deliverDistanceTextView {
-            
-        } else if textField == deliverCostTextView {
-            
-        } else if textField == snaagDaysTextView {
-            
-        } else if textField == snaagHoursTextView {
-            
-        }
-        
-        if allRequiredFilled() {
-            // If this is true then the confirm button should be enabled here
-        }
-    }
-    
     func allRequiredFilled() -> Bool {
         // Checks if all the required fields are filled
-        
-        return false
+        return (self.titleGiven && self.lendPriceGiven && self.lendDurationGiven)
     }
 }
 
